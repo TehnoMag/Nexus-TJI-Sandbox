@@ -60,7 +60,7 @@ RULE event MissionReplayMovie //Button ID 1
 	:action
 		
 		U.UI.currentID := 1;
-		MsgBox("id 1");
+		localEvent(PlayersFleetMove, 0);
 		
 	:end
 END
@@ -124,7 +124,7 @@ RULE event MissionEnter //Button id 5
 	:action
 	
 		U.UI.currentID := 5;
-		MsgBox("id 5");
+		localEvent(EndTurn);
 		
 	:end
 END

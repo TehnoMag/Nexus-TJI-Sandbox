@@ -1,0 +1,12 @@
+MISSION 99
+Name "Location"
+
+RULES
+
+	RULE	event SceneInit
+		:action
+		
+		:end
+	END
+
+END

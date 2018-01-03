@@ -1,0 +1,7 @@
+NAVPOINT
+	Name "playerFleet_location"
+END
+
+NAVPOINT
+	Name "playerFleet_destination"
+END

@@ -9,3 +9,18 @@ RULE	event NewGame
 	
 	:end
 END
+
+RULE	event PlayersFleetMove
+	:action
+	
+		U.locationMode := 1;
+		
+	
+	:end
+END
+
+RULE	event TurnEnd
+	:action
+	
+	:end
+END
