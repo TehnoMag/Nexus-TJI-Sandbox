@@ -1,0 +1,11 @@
+RULE	event NewGame
+	:action
+	
+		uCamera_PutInto(uGet("sys_Sol"));
+		U.UI.Enable := 1;
+		
+		uGetPlayersFleet():uSetParent(uGet("Earth"));
+		uGetPlayersFleet():uSetDetectionLevel(5);
+	
+	:end
+END

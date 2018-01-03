@@ -1,0 +1,898 @@
+Name "sys_Sol"
+
+CatalogID "AAA-001-0001"
+Position 49500 34000 -8500
+Roll -40
+Background 0.68 0.91 0.97 0.76  0.33 0.54 0.25 0.12
+NumStars 4000
+IdealCamPos 14.8833 15.1413 -41.4365  0.081032
+VisibleOnStarmap
+
+CELESTIAL
+	Name "Sol"
+
+	Radius 696000
+
+	Type 1
+	Mass 333000
+	Gravity 27.9637
+	Color 0.68
+	Size 0.8
+
+	CELESTIAL
+		Name "Mercury"
+
+		SemiMajorAxis 0.3871
+		Eccentricity 0.2056
+		Inclination 7.0049
+		AscendingNode 48.3317
+		ArgOfPericenter 29.1243
+		MeanAnomaly 174.795
+		PeriodD 87.9522
+		Radius 2440
+
+		Type 2
+		Mass 0.055
+		Gravity 0.37
+		Class C
+		Mesh "planets\sol_01_mercury"
+		RotationPeriod 1047.51
+		Obliquity 7.01
+		LongOfRotationAxis 228.31
+	END
+
+	CELESTIAL
+		Name "Venus"
+
+		SemiMajorAxis 0.7233
+		Eccentricity 0.0068
+		Inclination 3.3947
+		AscendingNode 76.681
+		ArgOfPericenter 54.852
+		MeanAnomaly 50.446
+		PeriodD 224.702
+		Radius 6052
+
+		Type 2
+		Mass 0.815
+		Gravity 0.88
+		Class B
+		Mesh "planets\sol_02_venus"
+		AtmosColor 0.8 0.8 0.8
+		RotationPeriod 5832.44
+		Obliquity 177.4
+		LongOfRotationAxis 302.07
+	END
+
+	CELESTIAL
+		Name "Earth"
+
+		SemiMajorAxis 1
+		Eccentricity 0.0167
+		Inclination 0.0001
+		AscendingNode 348.739
+		ArgOfPericenter -245.792
+		MeanAnomaly -2.48301
+		PeriodD 365.25
+		Radius 6378
+
+		Type 2
+		Mass 1
+		Gravity 1
+		Class A
+		Mesh "planets\sol_03_earth"
+		SurfSpecular 0.8 0.8 1
+		AtmosColor 0.1 0.3 1
+		RotationPeriod 23.9345
+		RotationOffset 280.5
+		Obliquity -23.45
+
+		CELESTIAL
+			Name "Moon"
+
+			SemiMajorAxisKM 384400
+			Eccentricity 0.0549
+			Inclination 5.15
+			PeriodD 27.3217
+			Radius 3746
+
+			Type 3
+			Mass 0.12
+			Gravity 0.17
+			Class C
+			Mesh "planets\sol_0301_moon"
+			RotationPeriod 24
+			RotationOffset 43
+		END
+	END
+
+	CELESTIAL
+		Name "Mars"
+
+		SemiMajorAxis 1.5237
+		Eccentricity 0.0934
+		Inclination 1.8506
+		AscendingNode 49.479
+		ArgOfPericenter 286.562
+		MeanAnomaly 19.412
+		PeriodD 686.999
+		Radius 3394
+
+		Type 2
+		Mass 0.107
+		Gravity 0.38
+		Class C
+		Mesh "planets\sol_04_mars"
+		AtmosColor 0.9 0.4 0.4
+		RotationPeriod 24.623
+		Obliquity 23.98
+		LongOfRotationAxis 262.78
+
+		CELESTIAL
+			Name "Phobos"
+
+			SemiMajorAxisKM 9377.2
+			Eccentricity 0.0151
+			Inclination 1.082
+			MeanAnomaly 50
+			PeriodD 0.31891
+			Radius 11
+
+			Type 3
+			Mass 2.56504E-009
+			Gravity 0.000862339
+			Class E
+			Mesh "planets\sol_0401_phobos"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Deimos"
+
+			SemiMajorAxisKM 23463.2
+			Eccentricity 0.00033
+			Inclination 1.791
+			MeanAnomaly 150
+			PeriodD 1.26244
+			Radius 6
+
+			Type 3
+			Mass 4.16265E-010
+			Gravity 0.000470367
+			Class E
+			Mesh "planets\sol_0402_deimos"
+			RotationPeriod 24
+		END
+	END
+
+	CELESTIAL
+		Name "Jupiter"
+
+		SemiMajorAxis 5.2034
+		Eccentricity 0.0484
+		Inclination 1.3053
+		AscendingNode 100.556
+		ArgOfPericenter -85.8021
+		MeanAnomaly 19.6501
+		Period 11.8622
+		Radius 71398
+
+		Type 2
+		Mass 317.9
+		Gravity 2.64
+		Class D
+		Mesh "planets\sol_05_jupiter"
+		AtmosColor 0.8 0.8 0.6
+		RotationPeriod 9.92425
+		Obliquity 3.08
+
+		CELESTIAL
+			Name "Amalthea"
+
+			SemiMajorAxisKM 181300
+			Eccentricity 0.003
+			Inclination 0.4
+			MeanAnomaly 210
+			PeriodD 0.498179
+			Radius 124
+
+			Type 3
+			Mass 3.67436E-006
+			Gravity 0.00972092
+			Class C
+			Mesh "planets\sol_0501_amalthea"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Io"
+
+			SemiMajorAxisKM 421600
+			Eccentricity 0.0041
+			Inclination 0.04
+			AscendingNode 312.981
+			ArgOfPericenter -215.246
+			MeanAnomaly 8.989
+			PeriodD 1.76914
+			Epoch -8545
+			Radius 1821
+
+			Type 3
+			Mass 0.0116371
+			Gravity 0.142756
+			Class C
+			Mesh "planets\sol_0502_io"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Europa"
+
+			SemiMajorAxisKM 670900
+			Eccentricity 0.0101
+			Inclination 0.47
+			AscendingNode 101.087
+			ArgOfPericenter 54.425
+			MeanAnomaly 20.865
+			PeriodD 3.55181
+			Epoch -8545
+			Radius 1565
+
+			Type 3
+			Mass 0.00738685
+			Gravity 0.122687
+			Class C
+			Mesh "planets\sol_0503_europa"
+			SurfSpecular 0.5 0.5 0.5
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Ganymede"
+
+			SemiMajorAxisKM 1.07E+006
+			Eccentricity 0.0015
+			Inclination 0.195
+			AscendingNode 119.841
+			ArgOfPericenter 68.99
+			MeanAnomaly -67.625
+			PeriodD 7.15455
+			Epoch -8545
+			Radius 2634
+
+			Type 3
+			Mass 0.0352179
+			Gravity 0.206491
+			Class C
+			Mesh "planets\sol_0504_ganymede"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Callisto"
+
+			SemiMajorAxis 0.0125871
+			Eccentricity 0.007
+			Inclination 0.281
+			AscendingNode 323.265
+			ArgOfPericenter 12.668
+			MeanAnomaly -250.842
+			PeriodD 16.689
+			Epoch -8545
+			Radius 2403
+
+			Type 3
+			Mass 0.026741
+			Gravity 0.188382
+			Class C
+			Mesh "planets\sol_0505_callisto"
+			RotationPeriod 24
+		END
+	END
+
+	CELESTIAL
+		Name "Saturn"
+
+		SemiMajorAxis 9.5371
+		Eccentricity 0.0542
+		Inclination 2.4845
+		AscendingNode 113.715
+		ArgOfPericenter -21.283
+		MeanAnomaly -42.488
+		Period 29.4577
+		Radius 60330
+
+		Type 2
+		Mass 95.2
+		Gravity 1.15
+		Class C
+		Mesh "planets\sol_06_saturn"
+		AtmosColor 0.7 0.7 0.3
+		Ring 74658 140000 "planets\rings\sol_06_saturn"
+		RotationPeriod 10.6562
+		Obliquity 28.052
+		LongOfRotationAxis 168
+
+		CELESTIAL
+			Name "Mimas"
+
+			SemiMajorAxisKM 185520
+			Eccentricity 0.0202
+			Inclination 1.53
+			MeanAnomaly 23
+			PeriodD 0.942422
+			Radius 199
+
+			Type 3
+			Mass 1.51871E-005
+			Gravity 0.0156005
+			Class C
+			Mesh "planets\sol_0601_mimas"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Enceladus"
+
+			SemiMajorAxisKM 238020
+			Eccentricity 0.0045
+			Inclination 0.02
+			MeanAnomaly 215
+			PeriodD 1.37022
+			Radius 249
+
+			Type 3
+			Mass 2.97519E-005
+			Gravity 0.0195202
+			Class C
+			Mesh "planets\sol_0602_enceladus"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Tethys"
+
+			SemiMajorAxisKM 294660
+			Inclination 1.09
+			MeanAnomaly 98
+			PeriodD 1.8878
+			Radius 530
+
+			Type 3
+			Mass 0.000286909
+			Gravity 0.0415491
+			Class C
+			Mesh "planets\sol_0603_tethys"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Dione"
+
+			SemiMajorAxisKM 377400
+			Eccentricity 0.0022
+			Inclination 0.02
+			MeanAnomaly 310
+			PeriodD 2.73692
+			Radius 560
+
+			Type 3
+			Mass 0.000338439
+			Gravity 0.0439009
+			Class C
+			Mesh "planets\sol_0604_Dione"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Rhea"
+
+			SemiMajorAxisKM 527040
+			Eccentricity 0.001
+			Inclination 0.35
+			MeanAnomaly 190
+			PeriodD 4.5175
+			Radius 764
+
+			Type 3
+			Mass 0.000859402
+			Gravity 0.0598934
+			Class C
+			Mesh "planets\sol_0605_rhea"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Titan"
+
+			SemiMajorAxisKM 1.22185E+006
+			Eccentricity 0.0292
+			Inclination 0.33
+			MeanAnomaly 120
+			PeriodD 15.9454
+			Radius 2575
+
+			Type 3
+			Mass 0.032904
+			Gravity 0.201866
+			Class C
+			Mesh "planets\sol_0606_Titan"
+			AtmosColor 0.2 0.5 1
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Hyperion"
+
+			SemiMajorAxisKM 1.4811E+006
+			Eccentricity 0.1042
+			Inclination 0.43
+			MeanAnomaly 350
+			PeriodD 21.2766
+			Radius 205
+
+			Type 3
+			Mass 1.66027E-005
+			Gravity 0.0160709
+			Class C
+			Mesh "planets\sol_0607_hyperion"
+			RotationPeriod 336
+			Obliquity 25
+			PrecessionRate 15.65
+		END
+
+		CELESTIAL
+			Name "Iapetus"
+
+			SemiMajorAxis 0.0238058
+			Eccentricity 0.0283
+			Inclination 7.52
+			MeanAnomaly 245
+			PeriodD 79.3302
+			Radius 718
+
+			Type 3
+			Mass 0.000713329
+			Gravity 0.0562872
+			Class C
+			Mesh "planets\sol_0608_iapetus"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Phoebe"
+
+			SemiMajorAxis 0.0865276
+			Eccentricity 0.16435
+			Inclination 174.751
+			AscendingNode 233.037
+			ArgOfPericenter 203.958
+			MeanAnomaly 186.784
+			PeriodD 548.212
+			Epoch -3653.5
+			Radius 110
+
+			Type 3
+			Mass 2.56504E-006
+			Gravity 0.00862339
+			Class C
+			Mesh "planets\sol_0609_phoebe"
+			RotationPeriod 9.6
+		END
+	END
+
+	CELESTIAL
+		Name "Uranus"
+
+		SemiMajorAxis 19.1913
+		Eccentricity 0.0472
+		Inclination 0.7699
+		AscendingNode 74.23
+		ArgOfPericenter 96.734
+		MeanAnomaly 142.268
+		Period 84.0139
+		Radius 26200
+
+		Type 2
+		Mass 14.5
+		Gravity 1.17
+		Class D
+		Mesh "planets\sol_07_uranus"
+		AtmosColor 0.3 0.4 0.3
+		Ring 41800 51149 "planets\rings\sol_07_uranus"
+		RotationPeriod 17.24
+		Obliquity 97.92
+		LongOfRotationAxis 167.76
+
+		CELESTIAL
+			Name "Miranda"
+
+			SemiMajorAxisKM 129800
+			Eccentricity 0.0027
+			Inclination 4.22
+			MeanAnomaly 120
+			PeriodD 1.413
+			Radius 235
+
+			Type 3
+			Mass 2.50104E-005
+			Gravity 0.0184227
+			Class C
+			Mesh "planets\sol_0701_miranda"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Ariel"
+
+			SemiMajorAxisKM 191200
+			Eccentricity 0.0034
+			Inclination 0.31
+			MeanAnomaly 56
+			PeriodD 2.52
+			Radius 576
+
+			Type 3
+			Mass 0.000368285
+			Gravity 0.0451552
+			Class C
+			Mesh "planets\sol_0702_ariel"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Umbriel"
+
+			SemiMajorAxisKM 266000
+			Eccentricity 0.005
+			Inclination 0.36
+			MeanAnomaly 280
+			PeriodD 4.144
+			Radius 585
+
+			Type 3
+			Mass 0.000385819
+			Gravity 0.0458608
+			Class C
+			Mesh "planets\sol_0703_umbriel"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Titania"
+
+			SemiMajorAxisKM 435800
+			Eccentricity 0.0022
+			Inclination 0.1
+			MeanAnomaly 30
+			PeriodD 8.706
+			Radius 789
+
+			Type 3
+			Mass 0.000946558
+			Gravity 0.0618532
+			Class C
+			Mesh "planets\sol_0704_titania"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Oberon"
+
+			SemiMajorAxisKM 583600
+			Eccentricity 0.0008
+			Inclination 0.1
+			MeanAnomaly 150
+			PeriodD 13.463
+			Radius 761
+
+			Type 3
+			Mass 0.000849318
+			Gravity 0.0596582
+			Class C
+			Mesh "planets\sol_0705_Oberon"
+			RotationPeriod 24
+		END
+	END
+
+	CELESTIAL
+		Name "Neptune"
+
+		SemiMajorAxis 30.069
+		Eccentricity 0.0086
+		Inclination 1.7692
+		AscendingNode 131.722
+		ArgOfPericenter -86.751
+		MeanAnomaly 259.909
+		Period 164.793
+		Radius 25225
+
+		Type 2
+		Mass 17.6
+		Gravity 1.18
+		Class D
+		Mesh "planets\sol_08_neptune"
+		AtmosColor 0.3 0.3 0.6
+		RotationPeriod 16.11
+		Obliquity 28.03
+		LongOfRotationAxis 49.235
+
+		CELESTIAL
+			Name "Proteus"
+
+			SemiMajorAxisKM 117647
+			Inclination 0.55
+			MeanAnomaly 310
+			PeriodD 1.12232
+			Radius 218
+
+			Type 3
+			Mass 1.99658E-005
+			Gravity 0.01709
+			Class C
+			Mesh "planets\sol_0801_proteus"
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Triton"
+
+			SemiMajorAxisKM 354760
+			Eccentricity 4E-005
+			Inclination 156.834
+			MeanAnomaly 120
+			PeriodD 5.87685
+			Radius 1353
+
+			Type 3
+			Mass 0.0047732
+			Gravity 0.106068
+			Class C
+			Mesh "planets\sol_0802_triton"
+			AtmosColor 0.5 0.5 0.5
+			RotationPeriod 24
+		END
+
+		CELESTIAL
+			Name "Nereid"
+
+			SemiMajorAxis 0.0368548
+			Eccentricity 0.7512
+			Inclination 7.23
+			MeanAnomaly 185
+			PeriodD 360.136
+			Radius 170
+
+			Type 3
+			Mass 9.46811E-006
+			Gravity 0.0133271
+			Class C
+			Mesh "planets\sol_0803_nereid"
+			RotationPeriod 24
+		END
+	END
+
+	CELESTIAL
+		Name "Pluto"
+
+		SemiMajorAxis 39.4817
+		Eccentricity 0.248808
+		Inclination 17.1418
+		AscendingNode 110.303
+		ArgOfPericenter 113.764
+		MeanAnomaly 14.8611
+		Period 248.54
+		Radius 1137
+
+		Type 2
+		Mass 0.003
+		Gravity 0.05
+		Class C
+		Mesh "planets\sol_09_pluto"
+		RotationPeriod 153.29
+		Obliquity 122.53
+
+		CELESTIAL
+			Name "Charon"
+
+			SemiMajorAxisKM 19636
+			Eccentricity 0.0076
+			MeanAnomaly 120
+			PeriodD 6.38708
+			Radius 593
+
+			Type 3
+			Mass 0.000401865
+			Gravity 0.0464879
+			Class C
+			Mesh "planets\sol_0901_charon"
+			RotationPeriod 24
+		END
+	END
+
+	CELESTIAL
+		Name "Ceres"
+
+		SemiMajorAxis 2.766
+		Eccentricity 0.0793
+		Inclination 10.584
+		AscendingNode 80.483
+		ArgOfPericenter 74.043
+		MeanAnomaly 232.067
+		Period 4.60014
+		Epoch 1055.5
+		Radius 456
+
+		Type 4
+		Mass 0.00018273
+		Gravity 0.0357479
+		Class E
+		Mesh "planets\planet_800_ef"
+		RotationPeriod 9.075
+	END
+
+	CELESTIAL
+		Name "Pallas"
+
+		SemiMajorAxis 2.7733
+		Eccentricity 0.23
+		Inclination 34.846
+		AscendingNode 173.166
+		ArgOfPericenter 310.423
+		MeanAnomaly 218.057
+		Period 4.61868
+		Epoch 1055.5
+		Radius 260
+
+		Type 4
+		Mass 3.38717E-005
+		Gravity 0.0203826
+		Class E
+		Mesh "planets\planet_801_ef"
+		RotationPeriod 7.811
+	END
+
+	CELESTIAL
+		Name "Juno"
+
+		SemiMajorAxis 2.6669
+		Eccentricity 0.2589
+		Inclination 12.972
+		AscendingNode 170.133
+		ArgOfPericenter 247.948
+		MeanAnomaly 119.146
+		Period 4.3554
+		Epoch 1055.5
+		Radius 120
+
+		Type 4
+		Mass 3.33012E-006
+		Gravity 0.00940734
+		Class E
+		Mesh "planets\planet_802_ef"
+		RotationPeriod 24
+	END
+
+	CELESTIAL
+		Name "Vesta"
+
+		SemiMajorAxis 2.36708
+		Eccentricity 0.089753
+		Inclination 7.1346
+		AscendingNode 103.951
+		ArgOfPericenter 149.459
+		MeanAnomaly 104.98
+		Period 3.62729
+		Epoch 1055.5
+		Radius 265
+
+		Type 4
+		Mass 3.58636E-005
+		Gravity 0.0207745
+		Class E
+		Mesh "planets\sol_ast_vesta"
+		RotationPeriod 5.342
+	END
+
+	CELESTIAL
+		Name "Cleopatra"
+
+		SemiMajorAxis 2.793
+		Eccentricity 0.2535
+		Inclination 13.14
+		AscendingNode 337.352
+		ArgOfPericenter 276.756
+		MeanAnomaly 180.595
+		Period 4.67
+		Epoch -145.5
+		Radius 109
+
+		Type 4
+		Mass 2.49572E-006
+		Gravity 0.008545
+		Class E
+		Mesh "planets\sol_ast_cleopatra"
+		RotationPeriod 5.385
+	END
+
+	CELESTIAL
+		Name "Chiron"
+
+		SemiMajorAxis 13.6481
+		Eccentricity 0.3806
+		Inclination 6.937
+		AscendingNode 209.381
+		ArgOfPericenter 339.483
+		MeanAnomaly 13.177
+		Period 50.7
+		Epoch -745.5
+		Radius 90
+
+		Type 4
+		Mass 1.4049E-006
+		Gravity 0.0070555
+		Class E
+		Mesh "planets\planet_803_ef"
+		RotationPeriod 5.9
+	END
+
+	CELESTIAL
+		Name "Halley"
+
+		SemiMajorAxis 17.9541
+		Eccentricity 0.9673
+		Inclination 162.24
+		AscendingNode 58.86
+		ArgOfPericenter 111.87
+		Period 75.7
+		Epoch -5065.5
+		Radius 7.5
+
+		Type 5
+		Mass 8.13018E-010
+		Gravity 0.000587959
+		Class F
+		Mesh "planets\planet_805_ef"
+		RotationPeriod 170
+	END
+
+	CELESTIAL
+		Name "Borrelly"
+
+		SemiMajorAxis 3.61145
+		Eccentricity 0.623919
+		Inclination 30.3244
+		AscendingNode 75.4248
+		ArgOfPericenter 353.374
+		Period 6.8631
+		Epoch 655.5
+		Radius 2.5
+
+		Type 5
+		Mass 3.01118E-011
+		Gravity 0.000195986
+		Class F
+		Mesh "planets\planet_804_ef"
+		RotationPeriod 170
+	END
+
+	CELESTIAL
+		Name "Ikeya-Zhang"
+
+		SemiMajorAxis 51.2768
+		Eccentricity 0.990111
+		Inclination 28.1206
+		AscendingNode 93.3718
+		ArgOfPericenter 34.6666
+		Period 367.182
+		Epoch 807.478
+		Radius 7.5
+
+		Type 5
+		Mass 8.13018E-010
+		Gravity 0.000587959
+		Class F
+		Mesh "planets\planet_808_ef"
+		RotationPeriod 170
+	END
+END

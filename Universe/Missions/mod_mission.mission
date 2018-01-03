@@ -1,0 +1,26 @@
+MISSION 111
+StoryMission 1 1
+Name "Runtime Error"
+Deflocation "Sol"
+
+RULES
+
+	RULE	event SceneInit
+		
+		:action
+		
+			GuiSelect(0);
+			StartTimer(ShowDLG, 1, 0);		
+			
+		:end
+		
+	END
+
+	RULE	event ShowDLG
+		:action
+			uDialog("mod.missing_requires", 0);
+			Delay(0, 5, TerminateApp(), 0);
+		:end
+	END
+	
+END

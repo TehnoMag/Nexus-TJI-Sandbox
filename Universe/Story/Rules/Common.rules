@@ -1,0 +1,130 @@
+RULE	event GameStart
+	:action
+	:end
+END
+
+RULE	event EpisodeStart
+	:action
+	
+		ActEpisode := 0;
+		//First we need to check required mods are installed
+		E.nc := uCall(Mod.SwitchOffOriginalCampaign, 0);
+		E.uSL := uCall(Mod.UniverseScriptLibrary, 0);
+	
+		if(!E.nc, U.req_nocampaign := 1);
+		if(!E.uSL, U.req_usl := 1);
+		
+		if
+		(
+			Not(E.nc&E.uSL),
+				uEnterMissionQuick(111)
+		);
+		
+	:end
+END
+
+RULE	event MissionStart
+	:action
+	
+		//Define strategy UI variables
+		UI.Init := 0;
+		UI.Enable := 0;
+		UI.currentID := 0;
+		
+		//Initialize mods
+		uCall(Mod.Initialize, 0);
+		U.uSL.Universe:localEvent(InitUniverse);
+		localEvent(NewGame, 0);
+	
+	:end
+END
+
+RULE	event MissionEnter
+		condition !U.UI.Init
+	:action
+	
+		U.UI.currentID := 5;
+		U.UI.Init := 1;
+
+	:end
+END
+
+
+RULE event MissionReplayMovie //Button ID 1
+	:condition
+		U.UI.Init&
+		U.UI.Enable&
+		U.UI.currentID!=1
+	:end
+
+	:action
+		
+		U.UI.currentID := 1;
+		MsgBox("id 1");
+		
+	:end
+END
+
+/*RULE event MissionPlayBriefing //Button id 2
+	:condition
+		U.UI.Init&
+		U.UI.Enable&
+		U.UI.currentID!=2
+	:end
+
+	:action
+	
+		U.UI.currentID := 2;
+		MsgBox("id 2");
+		
+	:end
+END*/
+
+RULE event MissionPlayBriefing //Button id 3
+	:condition
+		U.UI.Init&
+		U.UI.Enable&
+		U.UI.currentID!=3&
+		E.index=1
+	:end
+		
+	:action
+	
+		U.UI.currentID := 3;
+		MsgBox("id 3");
+		
+	:end
+END
+
+RULE event MissionPlayBriefing //Button id 4
+	:condition
+		U.UI.Init&
+		U.UI.Enable&
+		U.UI.currentID!=4&
+		U.UI.currentID!=2&
+		U.UI.currentID!=3&
+		E.index=2
+	:end
+	
+	:action
+	
+		U.UI.currentID := 4;
+		MsgBox("id 4");
+		
+	:end
+END
+
+RULE event MissionEnter //Button id 5
+	:condition
+		U.UI.Init&
+		U.UI.Enable&
+		U.UI.currentID!=5
+	:end
+
+	:action
+	
+		U.UI.currentID := 5;
+		MsgBox("id 5");
+		
+	:end
+END
